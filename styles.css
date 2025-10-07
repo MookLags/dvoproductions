@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 130px;
+}
+
 @font-face {
   font-family: 'Inter';
   font-weight: 400;
@@ -57,6 +61,12 @@ body::after {
   font-size: 1.5rem;
   width: 75px;
   padding-right: 1.8rem;
+}
+
+#voice-actor {
+  color: var(--orange);
+  font-style: italic;
+  font-family: serif;
 }
 
 #logo {
@@ -133,7 +143,7 @@ ul > li {
   height: auto;
   color: #fff;
   background-color: var(--blue);
-  text-align: justify;
+  text-align: left;
   padding: 6rem 0 3rem 0;
 }
 
@@ -229,7 +239,7 @@ video {
 }
 
 .testimonial > p {
-  text-align: justify;
+  text-align: left;
 }
 
 .signature {
@@ -251,7 +261,7 @@ video {
   width: 60%;
   font-size: 1.3rem;
   margin: 2rem auto;
-  text-align: justify;
+  text-align: left;
 }
 
 #contact {
@@ -268,13 +278,11 @@ video {
 
 #contact-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
   width: 50%;
 }
 
-/* I'm leaving out the contact form for the time being */
-/*
 #contact-div > form {
   display: flex;
   justify-content: space-between;
@@ -293,8 +301,8 @@ video {
   padding: 6px -6px 6px 6px;
   font-size: 0.8rem;
   font-family: 'Inter', 'sans-serif';
+  resize: none;
 }
-*/
 
 button {
   width: calc(90% + 6px);
@@ -448,13 +456,11 @@ footer {
     margin: 0 auto 2rem auto;
   }
 
-/*
   #contact-div > form {
     margin: 5rem auto 2rem auto;
     width: 85%;
     align-items: center;
   }
-*/
 
   .name-input {
     width: 100%;
