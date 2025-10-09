@@ -347,6 +347,15 @@ footer {
   padding: 3rem 0;
 }
 
+#success-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  margin: 5rem auto;
+  height: 40vh;
+}
+
 @media screen and (max-width: 720px) {
   header {
     position: relative;
