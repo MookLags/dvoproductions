@@ -304,7 +304,7 @@ video {
   resize: none;
 }
 
-button {
+button, input[type=submit] {
   width: calc(90% + 6px);
   height: 1.8rem;
   font-weight: bold;
@@ -313,7 +313,7 @@ button {
   color: #fff;
 }
 
-button:hover {
+button:hover, input[type=submit]:hover {
   filter: brightness(125%);
   cursor: pointer;
 }
