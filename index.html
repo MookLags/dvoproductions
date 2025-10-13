@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='description' content='' />
+    <link rel='stylesheet' href='styles.css' />
+    <title>Doug Leonard | Voice Actor</title>
+  </head>
+  <body>
+    <header>
+      <!-- nav bar fixed height no resize sticky top -->
+      <nav>
+        <div>
+          <div id='name-and-logo'>
+            <h1 class='sr-only'>Doug Leonard, Voice Actor</h1>
+            <div>
+              <p id='name'>Doug Leonard</p>
+              <p id='voice-actor'>Voice Actor</p>
+            </div>
+            <img id='logo' src='./static/orange.svg' alt='' />
+          </div>
+          <p id='tagline'><span class='real'>Navy <i>GRIT</i>, Studio <i>WIT</i></span></p>
+        </div>
+        <ul>
+          <li><a href='#home'>Home</a></li>
+          <li><a href='#demos'>Demos</a></li>
+          <li><a href='#testimonials'>Testimonials</a></li>
+          <li><a href='#about'>About</a></li>
+          <li><a href='#contact'>Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Home Demos Testimonials About Contact -->
+    </header>
+    <main>
+      <!-- home -->
+      <section id='home'>
+        <p>"When industry leaders need a signature voice to define their brand and stop listeners in their tracks, they demand more than just great sound—they want energy, authenticity, and instant connection. Doug Leonard delivers all that and more, bringing an exciting, captivating, and genuine presence to every project he voices."</p>
+      </section>
+      
+      <!-- demos -->
+      <section id='demos'>
+        <div>
+          <p>Demo</p>
+          <video controls poster='./static/doug-thumbnail.png'>
+            <source src='./assets/DougLeonardCommercialsCompressed.mp4' type='video/mp4' />
+          </video>
+        </div>
+      </section>
+      <div id='featured-demos'>
+        <p>Featured Demos</p>
+        <div id='logos'>
+          <img src='./static/f-logo.webp' height=40 alt='' />
+          <img src='./static/k-logo.png' height=10 alt='' />
+          <img src='./static/g-logo.png' height=90 alt='' />
+          <img src='./static/l-logo.png' height=40 alt='' />
+          <img src='./static/v-logo.png' height=70 alt='' />
+        </div>
+      </div>
+      <!-- testimonials -->
+      <section id='testimonials'>
+        <h2>Testimonials</h2>
+        <div id='testimonials-div'>
+          <div class='testimonial'>
+            <p>"Doug Leonard is an absolute gem to work with, who is genuine, professional, and incredibly talented. His unique signature sound instantly sets him apart, and he brings a natural charisma to every read."</p>
+            <img class='signature' src='./static/chuck.png' width='300'/>
+          </div>
+          <div class='testimonial'>
+            <p>"Doug has a sound that many would love to own. He delivers warmth when you need it, fun and excitement when it’s a must and luxury and edge to any luxury brand out there."</p>
+            <img class='signature' src='./static/eddie.png'/>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section id='about'>
+        <h2>About</h2>
+        <!--
+        <p>Doug’s voice tells a story because he’s lived one. A former Navy firefighter and long-haul trucker, he got his start ad-libbing radio spots for billboards he passed on the road. Self-taught at first, he later honed his craft under some of the best in the voiceover industry, bringing real-world grit, warmth, and authenticity to every read.</p>        
+        -->
+        <p class='doug-quote'>I'm Doug Leonard, a guy who's worn a lot of hat's (and headsets). I went from the U.S. Navy to running live sound to hauling freight as a truck driver. Along the way, I learned discipline, grit, and the fine art of surviving both Navy inspections and truck stop coffee, which should honestly come with hazard pay. Every twist in that road taught me connection, resilience, and storytelling.</p>        
+        <p class='doug-quote'>Now, I bring all of that to voiceover. Whether it's powering up a commercial or voicing a brand's story, I deliver with heart, humor, and authenticity. From Navy grit to studio wit, let's bring your story to life.</p>
+      </section>
+      <section id='contact'>
+        <h2>Contact</h2>
+        <div id='contact-div'>
+          <div>
+            <p><a class='contact-item' href='tel:+13302194545'>Call Me</a></p>
+            <p><a class='contact-item' href='mailto:doug@dougsvoiceoverproductions.com'>Email Me</a></p>
+            <p><a class='contact-item' href='https://www.linkedin.com/in/doug-leonard-9096b4379'>Connect With Me</a></p>
+          </div>
+          <form name='contact' method='POST' data-netlify='true' netlify-honeypot='bot-field' action='./success.html'>
+          <input type='hidden' name='form-name' value='contact' />
+          <p style="display:none;">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+            <label><input class='name-input' type='text' name='name' placeholder='Your name' /></label>
+            <label><input class='name-input' type='email' name='email' placeholder='Your email' /></label>
+            <label><input class='name-input' type='text' name='subject' placeholder='Subject' /></label>
+            <label><textarea class='text-input' name='message' placeholder='Your message'></textarea></label>
+            <input type='submit' value='Contact' />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; 2025 Doug's Voice Over Productions, All rights reserved
+    </footer>
+  </body>
+</html>
