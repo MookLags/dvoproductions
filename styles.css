@@ -278,11 +278,16 @@ video {
 
 #contact-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   margin: auto;
-  width: 50%;
+  width: 70%;
 }
 
+#business-card {
+  height: 100%;
+}
+
+/*
 #contact-div > form {
   display: flex;
   justify-content: space-between;
@@ -303,6 +308,7 @@ video {
   font-family: 'Inter', 'sans-serif';
   resize: none;
 }
+*/
 
 button, input[type=submit] {
   width: calc(90% + 6px);
